@@ -3,13 +3,17 @@ import { theme } from './../../globalStyle/theme';
 
 export const HeaderComponent = styled.header`
 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 34px 100px 29px 100px;
+
     & .principal{
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
-
-        padding: 34px 100px 29px 100px;
 
 
         & .pesquisa{
@@ -60,6 +64,10 @@ export const HeaderComponent = styled.header`
             margin: 0px 20px;
 
             & .btnCadastrese{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 font-weight: 400;
                 font-size: 16px;
                 letter-spacing: 0.75px;
@@ -72,6 +80,7 @@ export const HeaderComponent = styled.header`
                 cursor: pointer;
     
                 & hr{
+                    width: 93%;
                     height: 1.3px;
                     border: none;
                     background-color: ${({theme})=>theme.dark_gray_2};
@@ -128,5 +137,48 @@ export const HeaderComponent = styled.header`
         }
     }
 
+
+    & .navegacao {
+
+        & ul{
+            display: flex;
+            gap: 30px;
+
+            
+            & li{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+                letter-spacing: 0.75px;
+                color: ${({theme})=>theme.dark_gray_2};
+
+                cursor: pointer;
+
+
+                & hr{
+                    opacity: 0;
+                    width: 100%;
+                    height: 2px;
+                    border: none;
+                    background-color: ${({theme})=>theme.primary};
+                }
+
+                &:hover{
+                    color: ${({theme})=>theme.primary};
+                    font-weight: 700;
+
+                    & hr{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
 
 `

@@ -12,7 +12,22 @@ export const GlobalStyle =  createGlobalStyle`
     }
 
     body{
-        width: 100vw;
         height: 100vh;
+    }
+
+    ::-webkit-scrollbar{
+        background-color: ${({theme})=>theme.light_gray_2};
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: ${({theme})=>theme.primary};
+        border-radius: 5px;
+    }
+
+    .teste{
+        height: 681px;
+        background-color: ${({theme})=>theme.light_gray_3};
+
     }
 `

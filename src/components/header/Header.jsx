@@ -5,6 +5,7 @@ import MiniCart from '../../assets/mini-cart.svg'
 
 import { CiSearch } from "react-icons/ci";
 
+
 const Header = () => {
     return (
         <HeaderComponent>
@@ -28,6 +29,17 @@ const Header = () => {
                     <sup>2</sup>
                 </button>
 
+            </section>
+
+            <section className="navegacao">
+                <nav> 
+                    <ul>
+                        <li>Home <hr /></li>
+                        <li>Produtos <hr /></li>
+                        <li>Categorias <hr /></li>
+                        <li>Meus Pedidos <hr /></li>
+                    </ul>
+                </nav>
             </section>
         </HeaderComponent>
     );

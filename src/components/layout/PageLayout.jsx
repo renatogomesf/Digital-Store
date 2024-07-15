@@ -5,6 +5,7 @@ const PageLayout = () => {
     return (
         <>
             <Header/>
+            <div className="teste"></div>
             <Footer/>
         </>
     );
