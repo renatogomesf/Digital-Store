@@ -43,43 +43,48 @@ const Footer = () => {
 
     return (
         <FooterComponent>
-            <section className="logo">
-                <img src={LogoFooter} alt="digital store" />
+            <section className="footer">
+                <section className="logo">
+                    <img src={LogoFooter} alt="digital store" />
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
 
-                <div>
-                    <img src={Facebook} alt="facebook" />
-                    <img src={Instagram} alt="instagram" />
-                    <img src={Twitter} alt="twitter" />
-                </div>
-            </section>
+                    <div className="redesSociais">
+                        <a href=""><img src={Facebook} alt="facebook" /></a>
+                        <a href=""><img src={Instagram} alt="instagram" /></a>
+                        <a href=""><img src={Twitter} alt="twitter" /></a>
+                    </div>
+                </section>
 
-            {
-                footer.map((item)=>{
-                    return (
-                        <section className="informacao">
-                            {
-                                <div>
-                                    <h4>{item.title}</h4>
-                                    <div>
-                                        {item.informations.map((itens)=>{
-                                            return <a href="">{itens}</a>
-                                        })}
+                {
+                    footer.map((item)=>{
+                        return (
+                            <section>
+                                {
+                                    <div className="informacao">
+                                        <h3>{item.title}</h3>
+                                        <div className="links">
+                                            {item.informations.map((itens)=>{
+                                                return (
+                                                <div>
+                                                    <a href="">{itens}</a>
+                                                </div>
+                                            )
+                                            })}
+                                        </div>
                                     </div>
-            
-                                </div>
-                            }
-                        </section>
-                    )
-                })
-            }
+                                }
+                            </section>
+                        )
+                    })
+                }
+            </section>
 
             <hr />
 
-            <div>
+            <div className="copyright">
                 <p>@ 2022 Digital College</p>
             </div>
 
