@@ -9,6 +9,7 @@ export const GlobalStyle =  createGlobalStyle`
         padding: 0px;
 
         font-family: "Inter", sans-serif;
+        text-decoration: none;
     }
 
     body{

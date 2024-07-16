@@ -156,7 +156,10 @@ export const HeaderComponent = styled.header`
                 font-weight: 400;
                 line-height: 28px;
                 letter-spacing: 0.75px;
-                color: ${({theme})=>theme.dark_gray_2};
+
+                .notactive{
+                    color: ${({theme})=>theme.dark_gray_2};
+                }
 
                 cursor: pointer;
 
@@ -169,7 +172,7 @@ export const HeaderComponent = styled.header`
                     background-color: ${({theme})=>theme.primary};
                 }
 
-                &:hover{
+                & .active{
                     color: ${({theme})=>theme.primary};
                     font-weight: 700;
 

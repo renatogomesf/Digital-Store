@@ -1,9 +1,9 @@
-import PageLayout from './components/layout/PageLayout';
+import Paths from "./routes/Paths";
 
 const App = () => {
     return (
         <>
-            <PageLayout/>
+            <Paths/>
         </>
     );
 }

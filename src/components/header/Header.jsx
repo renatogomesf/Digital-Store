@@ -4,6 +4,7 @@ import LogoHeader from '../../assets/logo-header.svg'
 import MiniCart from '../../assets/mini-cart.svg'
 
 import { CiSearch } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -34,10 +35,26 @@ const Header = () => {
             <section className="navegacao">
                 <nav> 
                     <ul>
-                        <li>Home <hr /></li>
-                        <li>Produtos <hr /></li>
-                        <li>Categorias <hr /></li>
-                        <li>Meus Pedidos <hr /></li>
+                        <li>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/"}>
+                                Home <hr />
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/produtos"}>
+                                Produtos <hr />
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/categorias"}>
+                                Categorias <hr />
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/meuspedidos"}>
+                                Meus Pedidos <hr />
+                            </NavLink>
+                        </li>
                     </ul>
                 </nav>
             </section>
