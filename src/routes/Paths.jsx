@@ -9,7 +9,7 @@ const Paths = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<PageLayout/>}>
-                        <Route index element={<HomePage/>}/>
+                        <Route path="/" element={<HomePage/>}/>
                         <Route path="/produtos" element={<ProductListing/>}/>
                     </Route>
                 </Routes>

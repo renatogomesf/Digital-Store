@@ -1,7 +1,12 @@
+import Gallery from "../components/gallery/Gallery";
+
+
 const HomePage = () => {
     return (
         <>
-            <div className="teste"></div>
+           
+            <Gallery/>
+            
         </>
     );
 }

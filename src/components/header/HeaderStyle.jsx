@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from './../../globalStyle/theme';
 
 export const HeaderComponent = styled.header`
 
@@ -99,8 +98,7 @@ export const HeaderComponent = styled.header`
                 font-weight: 700;
                 line-height: 22px;
                 letter-spacing: 0.75px;
-                color: ${({theme})=>theme.white};
-    
+                color: ${({theme})=>theme.light_gray_3};
             }
         }
 
