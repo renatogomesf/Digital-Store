@@ -100,6 +100,12 @@ export const HeaderComponent = styled.header`
                 line-height: 22px;
                 letter-spacing: 0.75px;
                 color: ${({theme})=>theme.light_gray_3};
+
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: ${({theme})=>theme.tertiary};
+                }
             }
         }
 

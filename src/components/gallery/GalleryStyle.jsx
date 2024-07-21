@@ -4,8 +4,15 @@ export const GalleryComponent = styled.section`
     position: relative;
     margin-bottom: 38px;
 
+    & swiper-container::part(bullet) {
+        width: 12px;
+        height: 12px;
+    }
+    
     & swiper-container::part(bullet-active) {
         background-color: ${({theme})=>theme.primary};
+        width: 12px;
+        height: 12px;
     }
 
     & .texto-banner{
@@ -56,6 +63,12 @@ export const GalleryComponent = styled.section`
             font-weight: 700;
             line-height: 24px;
             letter-spacing: 0.75px;
+
+            transition: 0.3s;
+
+            &:hover{
+                background-color: ${({theme})=>theme.tertiary};
+            }
         }
     }
 `

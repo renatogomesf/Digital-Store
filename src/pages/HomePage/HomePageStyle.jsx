@@ -67,6 +67,12 @@ export const CollectionDestaque01 = styled.div`
                 letter-spacing: 0.75px;
                 color: ${({theme})=>theme.primary};
 
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: ${({theme})=>theme.secondary};
+                    color: white;
+                }
             }
         }
     }
@@ -105,11 +111,15 @@ export const CollectionDestaque02 = styled.div`
             border-radius: 50%;
             background-color: white;
 
+            transition: 0.4s;
+
             
             &:hover{
                 box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+
                 & path{
                     fill: ${({theme})=>theme.primary};
+                    transition: 0.4s;
                 }
             }
         }
