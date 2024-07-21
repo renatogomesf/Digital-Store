@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageLayout from "../layout/PageLayout";
-import HomePage from "../pages/HomePage";
-import ProductListing from "../pages/ProductListing";
+import HomePage from "../pages/HomePage/HomePage";
+import ProductListing from "../pages/ProductListing/ProductListing";
 
 const Paths = () => {
     return (

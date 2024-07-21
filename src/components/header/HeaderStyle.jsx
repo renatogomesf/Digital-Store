@@ -5,6 +5,7 @@ export const HeaderComponent = styled.header`
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background-color: white;
 
     padding: 34px 100px 29px 100px;
 

@@ -14,6 +14,7 @@ export const GlobalStyle =  createGlobalStyle`
 
     body{
         height: 100vh;
+        background-color: #f9f8fe;
     }
 
     ::-webkit-scrollbar{

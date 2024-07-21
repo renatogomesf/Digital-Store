@@ -4,24 +4,26 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Section = (props) => {
 
-    const seta = <FaArrowRightLong />
-
     const SectionComponent = styled.section`
 
-        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 0px 100px 100px 100px;
 
         & .titulo{
             display: flex;
             justify-content: space-between;
-            text-align: ${props.titleAlign};
-
-
+            
             & h3{
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 38px;
-            letter-spacing: 0.75px;
-            color: ${({theme})=>theme.dark_gray_2};
+                text-align: ${props.titleAlign};
+                width: 100%;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 38px;
+                letter-spacing: 0.75px;
+                color: ${({theme})=>theme.dark_gray_2};
             }
 
             & a{
@@ -41,12 +43,10 @@ const Section = (props) => {
                 }
             }
         }
-
     `
 
     return (
         <SectionComponent>
-
             <div className="titulo">
                 <h3>{props.title}</h3>
                 <a href={props.link.href}>
@@ -54,8 +54,9 @@ const Section = (props) => {
                 </a>
             </div>
 
-            {props.children}
-
+            <div className="conteudo">
+                {props.children}
+            </div>
         </SectionComponent>
     );
 }
