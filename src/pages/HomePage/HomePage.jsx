@@ -1,5 +1,8 @@
 import Gallery from "../../components/gallery/Gallery";
+import ProductListing from "../../components/productListing/ProductListing";
 import Section from "../../components/Section/Section";
+
+
 import { CollectionDestaque01, CollectionDestaque02 } from './HomePageStyle';
 import { Hat, Headphones, Pants, Sneakers, Tshirt } from "./HomePageSVG";
 
@@ -87,6 +90,11 @@ const HomePage = () => {
                     </div>
                 </CollectionDestaque02>
 
+            </Section>
+
+
+            <Section titleAlign = {"left"} title={"Produtos em alta"} link={{text:"Ver todos", href: ""}}>
+                <ProductListing/>
             </Section>
 
 

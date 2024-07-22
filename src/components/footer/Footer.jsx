@@ -59,16 +59,16 @@ const Footer = () => {
                 </section>
 
                 {
-                    footer.map((item)=>{
+                    footer.map((item,index)=>{
                         return (
-                            <section>
+                            <section key={index}>
                                 {
                                     <div className="informacao">
                                         <h3>{item.title}</h3>
                                         <div className="links">
-                                            {item.informations.map((itens)=>{
+                                            {item.informations.map((itens,index)=>{
                                                 return (
-                                                <div>
+                                                <div key={index}>
                                                     <a href="">{itens}</a>
                                                 </div>
                                             )

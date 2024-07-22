@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageLayout from "../layout/PageLayout";
 import HomePage from "../pages/HomePage/HomePage";
-import ProductListing from "../pages/ProductListing/ProductListing";
+import ProductListingPage from "../pages/productListingPage/ProductListingPage";
 
 const Paths = () => {
     return (
@@ -10,7 +10,7 @@ const Paths = () => {
                 <Routes>
                     <Route path="/" element={<PageLayout/>}>
                         <Route path="/" element={<HomePage/>}/>
-                        <Route path="/produtos" element={<ProductListing/>}/>
+                        <Route path="/produtos" element={<ProductListingPage/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>

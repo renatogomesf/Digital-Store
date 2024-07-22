@@ -73,6 +73,7 @@ export const HeaderComponent = styled.header`
                 letter-spacing: 0.75px;
                 color: ${({theme})=>theme.dark_gray_2};
                 width: 102px;
+                white-space: nowrap;
     
                 background-color: transparent;
                 border: none;
@@ -80,7 +81,7 @@ export const HeaderComponent = styled.header`
                 cursor: pointer;
     
                 & hr{
-                    width: 93%;
+                    width: 100%;
                     height: 1.3px;
                     border: none;
                     background-color: ${({theme})=>theme.dark_gray_2};

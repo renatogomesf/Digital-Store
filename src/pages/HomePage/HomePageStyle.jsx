@@ -115,7 +115,7 @@ export const CollectionDestaque02 = styled.div`
 
             
             &:hover{
-                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
 
                 & path{
                     fill: ${({theme})=>theme.primary};

@@ -30,6 +30,7 @@ const Section = (props) => {
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                white-space: nowrap;
 
                 font-size: 18px;
                 font-weight: 400;
