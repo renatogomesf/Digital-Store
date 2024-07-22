@@ -44,6 +44,12 @@ const Section = (props) => {
                 }
             }
         }
+
+
+        & .conteudo{
+            display: flex;
+            flex-direction: ${props.flexDirection};
+        }
     `
 
     return (

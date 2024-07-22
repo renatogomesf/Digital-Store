@@ -1,9 +1,9 @@
 import Gallery from "../../components/gallery/Gallery";
-import ProductListing from "../../components/productListing/ProductListing";
+import ProductListing from "../../components/ProductListing/ProductListing";
 import Section from "../../components/Section/Section";
 
 
-import { CollectionDestaque01, CollectionDestaque02 } from './HomePageStyle';
+import { CollectionDestaque01, CollectionDestaque02, OfertaEspecial } from './HomePageStyle';
 import { Hat, Headphones, Pants, Sneakers, Tshirt } from "./HomePageSVG";
 
 
@@ -13,7 +13,7 @@ const HomePage = () => {
         <>
             <Gallery/>
 
-            <Section titleAlign = {"left"} title={"Coleções em destaque"} link={{text:"", href: ""}}>
+            <Section flexDirection = {"column"} titleAlign = {"left"} title={"Coleções em destaque"} link={{text:"", href: ""}}>
 
                 <CollectionDestaque01>
                     <div className="Destaque01" >
@@ -51,7 +51,7 @@ const HomePage = () => {
 
 
 
-            <Section titleAlign = {"center"} title={"Coleções em destaque"} link={{text:"", href: ""}}>
+            <Section flexDirection = {"column"} titleAlign = {"center"} title={"Coleções em destaque"} link={{text:"", href: ""}}>
 
                 <CollectionDestaque02>
                     <div className="Destaque02" >
@@ -93,10 +93,22 @@ const HomePage = () => {
             </Section>
 
 
-            <Section titleAlign = {"left"} title={"Produtos em alta"} link={{text:"Ver todos", href: ""}}>
-                <ProductListing/>
+            <Section flexDirection = {"column"} titleAlign = {"left"} title={"Produtos em alta"} link={{text:"Ver todos", href: ""}}>
+                <ProductListing qtdColuna = {"4"} qtdCards = {"8"} gap = {"24px"}/>
             </Section>
 
+
+            <OfertaEspecial>
+                <div>
+                    <img src="../../../public/jordan.png" alt="air jordan" /> 
+                </div>
+                <div>
+                    <p className="texto01">Oferta especial</p>
+                    <h2 className="titulo">Air Jordan edição de colecionador</h2>
+                    <p className="texto02">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <button className="btnVerOferta">Ver Oferta</button>
+                </div>
+            </OfertaEspecial>
 
         </>
     );

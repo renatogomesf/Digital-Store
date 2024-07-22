@@ -6,6 +6,7 @@ export const ProductCardComponent = styled.div`
     & .imagem{
         position: relative;
         cursor: pointer;
+        margin-bottom: 18px;
 
         & .tagDesconto{
             position: absolute;

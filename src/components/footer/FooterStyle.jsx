@@ -17,7 +17,7 @@ export const FooterComponent = styled.footer`
 
     & .footer{
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(4, auto);
 
         & .logo{
             display: flex;

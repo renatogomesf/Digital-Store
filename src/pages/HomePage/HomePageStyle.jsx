@@ -125,3 +125,62 @@ export const CollectionDestaque02 = styled.div`
         }
     }
 `
+
+export const OfertaEspecial = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+    gap: 67px;
+    background-color: white;
+    height: 553px;
+
+
+    & .texto01{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.75px;
+        color: ${({theme})=>theme.primary};
+        margin-bottom: 17px;
+    }
+
+    & .titulo{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 1px;
+        color: ${({theme})=>theme.dark_gray_2};
+        margin-bottom: 20px;
+    }
+
+    & .texto02{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.75px;
+        color: ${({theme})=>theme.dark_gray_2};
+        margin-bottom: 30px;
+    }
+
+    & .btnVerOferta{
+        width: 200px;
+        height: 40px;
+        background-color: ${({theme})=>theme.primary};
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.75px;
+        color: ${({theme})=>theme.light_gray_3};
+
+        transition: 0.3s;
+
+        &:hover{
+            background-color: ${({theme})=>theme.tertiary};
+        }
+    }
+`

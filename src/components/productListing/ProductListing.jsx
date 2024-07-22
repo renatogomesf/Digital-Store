@@ -1,7 +1,9 @@
-import ProductCard from "../productCard/ProductCard";
-import { ProductListingComponent } from './ProductListingStyle';
+import styled from "styled-components";
 
-const ProductListing = () => {
+import ProductCard from "../productCard/ProductCard";
+
+
+const ProductListing = (props) => {
 
     const baseURL = "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/"
 
@@ -70,15 +72,87 @@ const ProductListing = () => {
             price: "$200",
             priceDiscount: "$149.9"
         },
+        {   
+            tagDesconto: "",
+            tipoProduto: "Tênis",
+            name: "Nome do produto",
+            image: baseURL + "product-thumb-2.jpeg",
+            price: "$200",
+            priceDiscount: "$149.9"
+        },
+        {   
+            tagDesconto: "",
+            tipoProduto: "Tênis",
+            name: "Nome do produto",
+            image: baseURL + "product-thumb-2.jpeg",
+            price: "$200",
+            priceDiscount: "$149.9"
+        },
+        {   
+            tagDesconto: "",
+            tipoProduto: "Tênis",
+            name: "Nome do produto",
+            image: baseURL + "product-thumb-2.jpeg",
+            price: "$200",
+            priceDiscount: "$149.9"
+        },
+        {   
+            tagDesconto: "",
+            tipoProduto: "Tênis",
+            name: "Nome do produto",
+            image: baseURL + "product-thumb-2.jpeg",
+            price: "$200",
+            priceDiscount: "$149.9"
+        },
+        {   
+            tagDesconto: "",
+            tipoProduto: "Tênis",
+            name: "Nome do produto",
+            image: baseURL + "product-thumb-2.jpeg",
+            price: "$200",
+            priceDiscount: "$149.9"
+        },
+        {   
+            tagDesconto: "",
+            tipoProduto: "Tênis",
+            name: "Nome do produto",
+            image: baseURL + "product-thumb-2.jpeg",
+            price: "$200",
+            priceDiscount: "$149.9"
+        },
+        {   
+            tagDesconto: "",
+            tipoProduto: "Tênis",
+            name: "Nome do produto",
+            image: baseURL + "product-thumb-2.jpeg",
+            price: "$200",
+            priceDiscount: "$149.9"
+        },
     ]
+
+
+    const ProductListingComponent = styled.section`
+
+        display: grid;
+        grid-template-columns: repeat(${props.qtdColuna}, auto);
+        gap: ${props.gap};
+    
+    `
+
+    let i = 1
 
     return (
         <ProductListingComponent>
             {
                 produto.map((item,index)=>{
-                    return (
-                        <ProductCard key={index} produto = {item}/>
-                    )
+                    if(i <= props.qtdCards){
+
+                        i++
+
+                        return (
+                            <ProductCard key={index} produto = {item}/>
+                        )
+                    }
                 })
             }
         </ProductListingComponent>
