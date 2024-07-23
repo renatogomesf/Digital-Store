@@ -9,9 +9,22 @@ import { Hat, Headphones, Pants, Sneakers, Tshirt } from "./HomePageSVG";
 
 const HomePage = () => {
 
+    const slideHome = [
+        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-7.jpeg"},
+        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-1.jpeg"},
+        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-2.jpeg"},
+        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-3.jpeg"},
+        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-4.jpeg"},
+        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-5.jpeg"},
+        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-6.jpeg"},
+        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/home-slide-8.jpeg"}
+    ]
+
     return (
         <>
-            <Gallery/>
+            <Gallery slide = {slideHome}/>
+
+
 
             <Section flexDirection = {"column"} titleAlign = {"left"} title={"Coleções em destaque"} link={{text:"", href: ""}}>
 
@@ -93,9 +106,11 @@ const HomePage = () => {
             </Section>
 
 
+
             <Section flexDirection = {"column"} titleAlign = {"left"} title={"Produtos em alta"} link={{text:"Ver todos", href: ""}}>
                 <ProductListing qtdColuna = {"4"} qtdCards = {"8"} gap = {"24px"}/>
             </Section>
+
 
 
             <OfertaEspecial>
@@ -109,7 +124,6 @@ const HomePage = () => {
                     <button className="btnVerOferta">Ver Oferta</button>
                 </div>
             </OfertaEspecial>
-
         </>
     );
 }
