@@ -14,6 +14,7 @@ export const GalleryComponent = styled.section`
         width: 12px;
         height: 12px;
     }
+    
 
     & .texto-banner{
         position: absolute;

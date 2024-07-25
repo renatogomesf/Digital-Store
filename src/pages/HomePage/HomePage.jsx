@@ -22,7 +22,7 @@ const HomePage = () => {
 
     return (
         <>
-            <Gallery slide = {slideHome}/>
+            <Gallery slide = {slideHome} pagination = {true} navigation = {false}/>
 
 
 

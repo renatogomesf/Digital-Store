@@ -33,6 +33,7 @@ const FilterGroup = (props) => {
                 height: 22px;
                 border-radius: 2px;
                 border: 1px solid ${({theme})=>theme.dark_gray_3};
+                cursor: pointer;
                 
                 &:checked{
                     background-color: ${({theme})=>theme.primary};
@@ -62,6 +63,7 @@ const FilterGroup = (props) => {
                 height: 22px;
                 border-radius: 50%;
                 border: 1px solid ${({theme})=>theme.dark_gray_3};
+                cursor: pointer;
 
                 &:checked{
                     border: 1px solid ${({theme})=>theme.primary};

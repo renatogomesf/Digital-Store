@@ -4,7 +4,7 @@ const Gallery = (props) => {
 
     return (
         <GalleryComponent>
-            <swiper-container slides-per-view="1" loop="true" autoplay="false" pagination> 
+            <swiper-container slides-per-view="1" loop="true" autoplay="false" pagination={props.pagination} navigation={props.navigation}> 
                     {
                         props.slide.map((item,index)=>{
                             return (
@@ -16,7 +16,7 @@ const Gallery = (props) => {
                     }
             </swiper-container>
 
-            <div className="texto-banner">
+            <div className="texto-banner" style={{display:props.display}}>
                 <p className="texto-01">Melhores ofertas personalizadas</p>
                 <h1 className="title">Queima de stoque Nike🔥</h1>
                 <p className="texto-02">Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
