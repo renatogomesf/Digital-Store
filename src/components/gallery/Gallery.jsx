@@ -1,20 +1,22 @@
+import {Swiper, SwiperSlide} from "swiper/react";
+
 import { GalleryComponent } from "./GalleryStyle";
 
 const Gallery = (props) => {
 
     return (
         <GalleryComponent>
-            <swiper-container slides-per-view="1" loop="true" autoplay="false" pagination={props.pagination} navigation={props.navigation}> 
+            <Swiper slides-per-view={1} loop={true} autoplay={false} pagination={props.pagination} navigation={props.navigation}> 
                     {
                         props.slide.map((item,index)=>{
                             return (
-                                <swiper-slide key={index}>
+                                <SwiperSlide key={index}>
                                     <img src={item.src} alt="slide" />
-                                </swiper-slide>
+                                </SwiperSlide>
                             )
                         })
                     }
-            </swiper-container>
+            </Swiper>
 
             <div className="texto-banner" style={{display:props.display}}>
                 <p className="texto-01">Melhores ofertas personalizadas</p>

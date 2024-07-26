@@ -4,18 +4,11 @@ export const GalleryComponent = styled.section`
     position: relative;
     margin-bottom: 38px;
 
-    & swiper-container::part(bullet) {
-        width: 12px;
-        height: 12px;
-    }
-    
-    & swiper-container::part(bullet-active) {
-        background-color: ${({theme})=>theme.primary};
-        width: 12px;
-        height: 12px;
-    }
-    
+    --swiper-pagination-color: ${({theme})=>theme.primary};
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bottom: 53px;
 
+    
     & .texto-banner{
         position: absolute;
         left: 100px;

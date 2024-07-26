@@ -11,7 +11,8 @@ export const ProductDetailsComponent = styled.section`
             flex-direction: column;
             gap: 20px;
             width: 700px;
-            --swiper-navigation-size: 44px;
+
+            --swiper-navigation-size: 22px;
             --swiper-navigation-top-offset: 50%;
             --swiper-navigation-sides-offset: 16px;
             --swiper-navigation-color: ${({theme})=>theme.dark_gray_2};
