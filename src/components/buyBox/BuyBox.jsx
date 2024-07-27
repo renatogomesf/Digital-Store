@@ -24,13 +24,21 @@ const BuyBox = () => {
         tamanho: {
             borderRadius: "4px",
             size: "48px",
-            sizeAfter: "48px"
+            sizeAfter: "48px",
+            border:"1px",
+            corPadrao: "#CCCCCC",
+            corChecked: "#C92071",
+            outline: "none"
         },
 
         cor: {
             borderRadius: "50%",
-            size: "31px",
-            sizeAfter: ""
+            size: "38px",
+            sizeAfter: "",
+            border:"2px",
+            corPadrao: "#fff",
+            corChecked: "#fff",
+            outline: ""
         }
     }
 
@@ -68,8 +76,6 @@ const BuyBox = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
             </div>
-
-            {/* borderRadius={"4px"} size={"48px"} sizeAfter={"48px"} */}
 
             <ProductOptions titulo={"Tamanho"} informacao={tamanho} estilos={estilos.tamanho}/>
             <ProductOptions titulo={"Cor"} informacao={cor} estilos={estilos.cor}/>

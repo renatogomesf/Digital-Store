@@ -32,13 +32,14 @@ const ProductOptions = (props) => {
                     width: ${props.estilos.size};
                     height: ${props.estilos.size};
                     border-radius: ${props.estilos.borderRadius};
-                    border: 1px solid ${({theme})=>theme.light_gray_2};
+                    border: ${props.estilos.border} solid ${props.estilos.corPadrao};
                     cursor: pointer;
                     z-index: 1;
                     overflow: hidden;
 
                     &:checked{
-                        border: 1px solid ${({theme})=>theme.primary};
+                        border: ${props.estilos.border} solid ${props.estilos.corChecked};
+                        outline: ${props.estilos.outline} solid ${({theme})=>theme.primary};
                         
                         &::after{
                             content: "";
