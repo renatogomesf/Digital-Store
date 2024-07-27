@@ -16,19 +16,25 @@ const ProductDetails = () => {
 
     return (
         <ProductDetailsComponent>
-            <div className="produtoDetalhe">
-                <div className="galeria">
-                    <Gallery slide={slide} display={"none"} pagination = {false} navigation = {true}/>
-                    <div className="rodape">
-                        {
-                            slide.map((item)=>{
-                                return <img className="imgMenor" src={item.src} alt="imagem produto" />
-                            })
-                        }
+            <div className="produto">
+
+                <p className="navegacao">Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</p>
+
+                <div className="produtoDetalhe">
+                    <div className="galeria">
+                        <Gallery slide={slide} display={"none"} pagination = {false} navigation = {true}/>
+                        <div className="rodape">
+                            {
+                                slide.map((item)=>{
+                                    return <img className="imgMenor" src={item.src} alt="imagem produto" />
+                                })
+                            }
+                        </div>
                     </div>
+
+                    <BuyBox/>
                 </div>
 
-                <BuyBox/>
             </div>
             
             <Section flexDirection = {"column"} titleAlign = {"left"} title={"Produtos Relacionados"} link={{text:"Ver todos", href: ""}}>
