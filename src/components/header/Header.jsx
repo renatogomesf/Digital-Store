@@ -11,6 +11,10 @@ const Header = () => {
     return (
         <HeaderComponent>
             <section className="principal">
+                <div className="menuMobileOpen">
+                    <span className="menuOpen"></span>
+                </div>
+
                 <div>
                     <img src={LogoHeader} alt="digital store" />
                 </div>

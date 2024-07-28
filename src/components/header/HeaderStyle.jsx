@@ -16,6 +16,11 @@ export const HeaderComponent = styled.header`
         gap: 20px;
 
 
+        & .menuMobile{
+            display: none;
+        }
+
+
         & .pesquisa{
             display: flex;
             align-items: center;
@@ -62,10 +67,6 @@ export const HeaderComponent = styled.header`
             gap: 30px;
 
             margin: 0px 20px;
-
-            @media (max-width: 768px) {
-                display: none;
-            }
 
             & .btnCadastrese{
                 display: flex;
@@ -194,4 +195,142 @@ export const HeaderComponent = styled.header`
         }
     }
 
+
+
+
+    @media (max-width: 768px) {
+        & .principal{
+
+            & .menuMobileOpen{
+                position: relative;
+                display: block;
+
+                &::before{
+                    position: absolute;
+                    top: -8px;
+                    content: "";
+                    width: 24px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: black;
+                    transform-origin: left;
+
+                    animation: AbrirMenuBefore 1s forwards;
+
+                    @keyframes AbrirMenuBefore {
+                        from{transform: rotate(0deg);}
+                        to{transform: rotate(42deg);}
+                    }
+                }
+
+                &::after{
+                    position: absolute;
+                    top: 8px;
+                    content: "";
+                    width: 24px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: black;
+                    transform-origin: left;
+
+                    animation: AbrirMenuAfter 1s forwards;
+
+                    @keyframes AbrirMenuAfter {
+                        from{transform: rotate(0deg);}
+                        to{transform: rotate(-42deg);}
+                    }
+                }
+
+
+                & .menuOpen{
+                    display: block;
+                    width: 24px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: black;
+
+                    animation: AbrirMenu 1s forwards;
+
+                    @keyframes AbrirMenu {
+                        from{opacity: 1;}
+                        to{opacity: 0;}
+                    }
+                }
+            }
+
+
+
+            & .menuMobileClose{
+                position: relative;
+                display: block;
+
+                &::before{
+                    position: absolute;
+                    top: -8px;
+                    content: "";
+                    width: 24px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: black;
+                    transform-origin: left;
+
+                    animation: FecharMenuBefore 1s forwards;
+
+                    @keyframes FecharMenuBefore {
+                        from{transform: rotate(42deg);}
+                        to{transform: rotate(0deg);}
+                    }
+                }
+
+                &::after{
+                    position: absolute;
+                    top: 8px;
+                    content: "";
+                    width: 24px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: black;
+                    transform-origin: left;
+
+                    animation: FecharMenuAfter 1s forwards;
+
+                    @keyframes FecharMenuAfter {
+                        from{transform: rotate(-42deg);}
+                        to{transform: rotate(0deg);}
+                    }
+                }
+
+
+                & .menuClose{
+                    display: block;
+                    width: 24px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: black;
+
+                    animation: FecharMenu 1s forwards;
+
+                    @keyframes FecharMenu {
+                        from{opacity: 0;}
+                        to{opacity: 1;}
+                    }
+                }
+            }
+
+
+            & .pesquisa{
+                display: none;
+            }
+
+
+            & .botoes{
+                display: none;
+            }
+        }
+    }   
+
+
+    & .navegacao {
+        display: none;
+    }
 `
