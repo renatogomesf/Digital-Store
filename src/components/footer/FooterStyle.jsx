@@ -16,8 +16,10 @@ export const FooterComponent = styled.footer`
 
 
     & .footer{
-        display: grid;
-        grid-template-columns: repeat(4, auto);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
 
         & .logo{
             display: flex;
@@ -25,38 +27,52 @@ export const FooterComponent = styled.footer`
             align-items: start;
             gap: 40px;
             width: 307px;
-            margin-right: 30px;
 
             & .redesSociais{
                 display: flex;
                 gap: 35px;
             }
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 50px;
+            }
         }
     }
 
-    & .informacao{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 40px;
 
-        & .links{
+    & .linkFooter{
+
+        display: flex;
+        align-items: start;
+        /* margin-left: 20px; */
+
+        & .informacao{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 20px;
-            width: 230px;
-
-            & a{
-                color: white;
-                
-                &:hover{
-                    color: ${({theme})=>theme.primary};
+            gap: 40px;
+    
+            & .links{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+                max-width: 260px;
+    
+                & a{
+                    color: white;
+                    
+                    &:hover{
+                        color: ${({theme})=>theme.primary};
+                    }
                 }
             }
+    
         }
-
     }
+
 
     & hr{
         margin-top: 15px;

@@ -136,7 +136,16 @@ const ProductListing = (props) => {
         display: grid;
         grid-template-columns: repeat(${props.qtdColuna}, auto);
         gap: ${props.gap};
-    
+        flex-wrap: wrap;
+
+
+        @media (max-width: 1350px) {
+            grid-template-columns: repeat(3, auto);
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, auto);
+        }
     `
 
     let i = 1

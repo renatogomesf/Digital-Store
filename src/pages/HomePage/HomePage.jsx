@@ -117,7 +117,7 @@ const HomePage = () => {
                 <div>
                     <img src="../../../public/jordan.png" alt="air jordan" /> 
                 </div>
-                <div>
+                <div className="campoTexto">
                     <p className="texto01">Oferta especial</p>
                     <h2 className="titulo">Air Jordan edição de colecionador</h2>
                     <p className="texto02">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>

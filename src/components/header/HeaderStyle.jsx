@@ -63,6 +63,10 @@ export const HeaderComponent = styled.header`
 
             margin: 0px 20px;
 
+            @media (max-width: 768px) {
+                display: none;
+            }
+
             & .btnCadastrese{
                 display: flex;
                 flex-direction: column;

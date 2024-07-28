@@ -61,7 +61,7 @@ const Footer = () => {
                 {
                     footer.map((item,index)=>{
                         return (
-                            <section key={index}>
+                            <section key={index} className="linkFooter">
                                 {
                                     <div className="informacao">
                                         <h3>{item.title}</h3>
