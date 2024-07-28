@@ -8,11 +8,37 @@ import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
+
+    
+    const Menu = ()=> {
+        const menuMobile = document.querySelector("#menuMobile")
+        const menu = document.querySelector("#menu")
+    
+        menuMobile.classList.toggle("menuMobileOpen")
+        menu.classList.toggle("menuOpen")
+
+        menuMobile.classList.toggle("menuMobileClose")
+        menu.classList.toggle("menuClose")
+
+
+
+        const botoesMobile = document.querySelector("#botoesMobile")
+        const navegacaoMobile = document.querySelector("#navegacaoMobile")
+
+        botoesMobile.classList.toggle("botoesMobileOpen")
+        navegacaoMobile.classList.toggle("navegacaoMobileOpen")
+
+        botoesMobile.classList.toggle("botoesMobileClose")
+        navegacaoMobile.classList.toggle("navegacaoMobileClose")
+    }
+
+
     return (
         <HeaderComponent>
             <section className="principal">
-                <div className="menuMobileOpen">
-                    <span className="menuOpen"></span>
+
+                <div id="menuMobile" className="menuMobileClose" onClick={Menu}>
+                    <span id="menu" className="menuClose"></span>
                 </div>
 
                 <div>
@@ -24,7 +50,7 @@ const Header = () => {
                     <CiSearch  className="lupa"/>
                 </div>
 
-                <div className="botoes">
+                <div id="botoesMobile" className="botoes botoesMobileClose">
                     <button className="btnCadastrese">Cadastre-se <hr /></button>
                     <button className="btnEntrar">Entrar</button>
                 </div>
@@ -36,29 +62,30 @@ const Header = () => {
 
             </section>
 
-            <section className="navegacao">
+            <section id="navegacaoMobile" className="navegacao navegacaoMobileClose">
                 <nav> 
                     <ul>
-                        <li>
+                        <li onClick={Menu}>
                             <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/"}>
                                 Home <hr />
                             </NavLink>
                         </li>
-                        <li>
+                        <li onClick={Menu}>
                             <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/produtos"}>
                                 Produtos <hr />
                             </NavLink>
                         </li>
-                        <li>
+                        <li onClick={Menu}>
                             <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/categorias"}>
                                 Categorias <hr />
                             </NavLink>
                         </li>
-                        <li>
+                        <li onClick={Menu}>
                             <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/meuspedidos"}>
                                 Meus Pedidos <hr />
                             </NavLink>
                         </li>
+                        <hr className="hrMobile" />
                     </ul>
                 </nav>
             </section>

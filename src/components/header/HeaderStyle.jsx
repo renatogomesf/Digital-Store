@@ -16,9 +16,7 @@ export const HeaderComponent = styled.header`
         gap: 20px;
 
 
-        & .menuMobile{
-            display: none;
-        }
+        & .menuMobile{display: none;}
 
 
         & .pesquisa{
@@ -150,6 +148,8 @@ export const HeaderComponent = styled.header`
 
 
     & .navegacao {
+        
+        & .hrMobile{display: none;}
 
         & ul{
             display: flex;
@@ -199,15 +199,21 @@ export const HeaderComponent = styled.header`
 
 
     @media (max-width: 768px) {
+
+        padding: 34px 50px 29px 50px;
+
         & .principal{
 
             & .menuMobileOpen{
                 position: relative;
-                display: block;
+                display: flex;
+                align-items: center;
+                width: 24px;
+                height: 24px;
 
                 &::before{
                     position: absolute;
-                    top: -8px;
+                    top: 18px;
                     content: "";
                     width: 24px;
                     height: 2px;
@@ -215,17 +221,17 @@ export const HeaderComponent = styled.header`
                     background-color: black;
                     transform-origin: left;
 
-                    animation: AbrirMenuBefore 1s forwards;
+                    animation: AbrirMenuBefore 0.3s forwards;
 
                     @keyframes AbrirMenuBefore {
                         from{transform: rotate(0deg);}
-                        to{transform: rotate(42deg);}
+                        to{transform: rotate(-37deg);}
                     }
                 }
 
                 &::after{
                     position: absolute;
-                    top: 8px;
+                    top: 4px;
                     content: "";
                     width: 24px;
                     height: 2px;
@@ -233,11 +239,11 @@ export const HeaderComponent = styled.header`
                     background-color: black;
                     transform-origin: left;
 
-                    animation: AbrirMenuAfter 1s forwards;
+                    animation: AbrirMenuAfter 0.3s forwards;
 
                     @keyframes AbrirMenuAfter {
                         from{transform: rotate(0deg);}
-                        to{transform: rotate(-42deg);}
+                        to{transform: rotate(37deg);}
                     }
                 }
 
@@ -249,7 +255,7 @@ export const HeaderComponent = styled.header`
                     border-radius: 1px;
                     background-color: black;
 
-                    animation: AbrirMenu 1s forwards;
+                    animation: AbrirMenu 0.3s forwards;
 
                     @keyframes AbrirMenu {
                         from{opacity: 1;}
@@ -262,11 +268,15 @@ export const HeaderComponent = styled.header`
 
             & .menuMobileClose{
                 position: relative;
-                display: block;
+                display: flex;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+                /* background-color: red; */
 
                 &::before{
                     position: absolute;
-                    top: -8px;
+                    top: 18px;
                     content: "";
                     width: 24px;
                     height: 2px;
@@ -274,17 +284,17 @@ export const HeaderComponent = styled.header`
                     background-color: black;
                     transform-origin: left;
 
-                    animation: FecharMenuBefore 1s forwards;
+                    animation: FecharMenuBefore 0.3s forwards;
 
                     @keyframes FecharMenuBefore {
-                        from{transform: rotate(42deg);}
+                        from{transform: rotate(-37deg);}
                         to{transform: rotate(0deg);}
                     }
                 }
 
                 &::after{
                     position: absolute;
-                    top: 8px;
+                    top: 4px;
                     content: "";
                     width: 24px;
                     height: 2px;
@@ -292,10 +302,10 @@ export const HeaderComponent = styled.header`
                     background-color: black;
                     transform-origin: left;
 
-                    animation: FecharMenuAfter 1s forwards;
+                    animation: FecharMenuAfter 0.3s forwards;
 
                     @keyframes FecharMenuAfter {
-                        from{transform: rotate(-42deg);}
+                        from{transform: rotate(37deg);}
                         to{transform: rotate(0deg);}
                     }
                 }
@@ -308,7 +318,7 @@ export const HeaderComponent = styled.header`
                     border-radius: 1px;
                     background-color: black;
 
-                    animation: FecharMenu 1s forwards;
+                    animation: FecharMenu 0.3s forwards;
 
                     @keyframes FecharMenu {
                         from{opacity: 0;}
@@ -323,14 +333,108 @@ export const HeaderComponent = styled.header`
             }
 
 
-            & .botoes{
-                display: none;
+            & .botoesMobileOpen{
+                position: absolute;
+                top: 312px;
+                left: 0px;
+                z-index: 101;
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                margin: 0px;
+                padding: 20px 0px 30px 0px;
+                width: 308px;
+
+                animation: AbrirBotao 0.3s forwards;
+
+                @keyframes AbrirBotao {
+                    from{left: -330px;}
+                    to{left: 0px;}
+                }
+            }
+
+            & .botoesMobileClose{
+                position: absolute;
+                top: 312px;
+                left: -330px;
+                z-index: 101;
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                margin: 0px;
+                padding: 20px 0px 30px 0px;
+                width: 308px;
+
+                animation: FecharBotao 0.3s forwards;
+
+                @keyframes FecharBotao {
+                    from{left: 0px;}
+                    to{left: -330px;}
+                }
+            }
+
+        }
+
+        & .navegacaoMobileOpen{
+            position: absolute;
+            top: 111px;
+            left: 0px;
+            background-color: white;
+            z-index: 100;
+            width: 308px;
+
+            animation: AbrirLink 0.3s forwards;
+
+            @keyframes AbrirLink {
+                from{left: -330px;}
+                to{left: 0px;}
+            }
+
+            & ul{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                padding: 30px 30px 20px 30px;
+            }
+
+            & .hrMobile{
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+                border-color: ${({theme})=>theme.light_gray_2};
+            }
+        }
+
+        & .navegacaoMobileClose{
+            position: absolute;
+            top: 111px;
+            left: -330px;
+            background-color: white;
+            z-index: 100;
+            width: 308px;
+            
+            animation: FecharLink 0.3s forwards;
+
+            @keyframes FecharLink {
+                from{left: 0px;}
+                to{left: -330px;}
+            }
+
+            & ul{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+                padding: 30px 30px 20px 30px;
+            }
+
+            & .hrMobile{
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+                border-color: ${({theme})=>theme.light_gray_2};
             }
         }
     }   
-
-
-    & .navegacao {
-        display: none;
-    }
 `
