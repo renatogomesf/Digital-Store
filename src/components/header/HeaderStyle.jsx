@@ -201,7 +201,7 @@ export const HeaderComponent = styled.header`
     @media (max-width: 768px) {
 
         padding: 34px 50px 29px 50px;
-
+        
         & .principal{
 
             & .menuMobileOpen{
@@ -272,7 +272,6 @@ export const HeaderComponent = styled.header`
                 align-items: center;
                 width: 24px;
                 height: 24px;
-                /* background-color: red; */
 
                 &::before{
                     position: absolute;
@@ -376,6 +375,7 @@ export const HeaderComponent = styled.header`
         }
 
         & .navegacaoMobileOpen{
+            display: block;
             position: absolute;
             top: 111px;
             left: 0px;
@@ -407,6 +407,7 @@ export const HeaderComponent = styled.header`
         }
 
         & .navegacaoMobileClose{
+            display: block;
             position: absolute;
             top: 111px;
             left: -330px;
