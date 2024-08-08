@@ -1,5 +1,5 @@
 import Section from "../../components/Section/Section";
-import ProductListing from '../../components/ProductListing/ProductListing';
+import ProductListing from '../../components/ProductListing/ProductListing.jsx';
 import FilterGroup from "../../components/filterGroup/FilterGroup";
 
 
