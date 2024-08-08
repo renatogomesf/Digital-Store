@@ -67,7 +67,7 @@ const Header = () => {
                 <nav> 
                     <ul>
                         <li onClick={Menu}>
-                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/"}>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end"}>
                                 Home <hr />
                             </NavLink>
                         </li>
