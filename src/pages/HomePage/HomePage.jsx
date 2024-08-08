@@ -1,6 +1,6 @@
 import Gallery from "../../components/gallery/Gallery";
-import ProductListing from "../../components/ProductListing/ProductListing";
 import Section from "../../components/Section/Section";
+import ProductListing from "../../components/ProductListing/ProductListing";
 
 
 import { CollectionDestaque01, CollectionDestaque02, OfertaEspecial } from './HomePageStyle';
