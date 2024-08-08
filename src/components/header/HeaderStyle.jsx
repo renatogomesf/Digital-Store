@@ -13,8 +13,10 @@ export const HeaderComponent = styled.header`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
 
+        & img{
+            margin-right: 20px;
+        }
 
         & .menuMobile{display: none;}
 

@@ -2,6 +2,11 @@ import Gallery from "../../components/gallery/Gallery";
 import Section from "../../components/Section/Section";
 import ProductListing from "../../components/ProductListing/ProductListing";
 
+import collection1 from "../../img/collection-1.png"
+import collection2 from "../../img/collection-2.png"
+import collection3 from "../../img/collection-3.png"
+import jordan from "../../img/jordan.png"
+
 
 import { CollectionDestaque01, CollectionDestaque02, OfertaEspecial } from './HomePageStyle';
 import { Hat, Headphones, Pants, Sneakers, Tshirt } from "./HomePageSVG";
@@ -30,7 +35,7 @@ const HomePage = () => {
 
                 <CollectionDestaque01>
                     <div className="Destaque01" >
-                        <img className="imgDestaque" src={"../../public/collection-1.png"} alt="coleção em destaque" />
+                        <img className="imgDestaque" src={collection1} alt="coleção em destaque" />
 
                         <div className="informacao">
                             <span className="tagOferta">30% OFF</span>
@@ -40,7 +45,7 @@ const HomePage = () => {
                     </div>
                     
                     <div className="Destaque01" >
-                        <img className="imgDestaque" src={"../../public/collection-2.png"} alt="coleção em destaque" />
+                        <img className="imgDestaque" src={collection2} alt="coleção em destaque" />
 
                         <div className="informacao">
                             <span className="tagOferta">30% OFF</span>
@@ -50,7 +55,7 @@ const HomePage = () => {
                     </div>
 
                     <div className="Destaque01" >
-                        <img className="imgDestaque" src={"../../public/collection-3.png"} alt="coleção em destaque" />
+                        <img className="imgDestaque" src={collection3} alt="coleção em destaque" />
 
                         <div className="informacao">
                             <span className="tagOferta">30% OFF</span>
@@ -115,7 +120,7 @@ const HomePage = () => {
 
             <OfertaEspecial>
                 <div>
-                    <img src="../../../public/jordan.png" alt="air jordan" /> 
+                    <img src={jordan} alt="air jordan" /> 
                 </div>
                 <div className="campoTexto">
                     <p className="texto01">Oferta especial</p>
