@@ -1,6 +1,6 @@
 import BuyBox from "../buyBox/BuyBox";
 import Gallery from "../gallery/Gallery";
-import ProductListing from "../ProductListing/ProductListing";
+import ProductListing from "../ProductListing/ProductListing.jsx";
 import { ProductDetailsComponent } from "./ProductDetailsStyle";
 import Section from './../Section/Section';
 
