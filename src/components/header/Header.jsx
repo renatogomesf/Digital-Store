@@ -72,12 +72,12 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li onClick={Menu}>
-                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end/produtos"}>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/produtos"}>
                                 Produtos <hr />
                             </NavLink>
                         </li>
                         <li onClick={Menu}>
-                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end/categorias"}>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/categorias"}>
                                 Categorias <hr />
                             </NavLink>
                         </li>
