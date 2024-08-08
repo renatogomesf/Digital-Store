@@ -1,5 +1,5 @@
 import Gallery from "../../components/gallery/Gallery";
-import ProductListing from "../../components/ProductListing/ProductListing.jsx";
+import ProductListing from "../../components/ProductListing/ProductListing";
 import Section from "../../components/Section/Section";
 
 
