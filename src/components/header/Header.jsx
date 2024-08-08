@@ -67,17 +67,17 @@ const Header = () => {
                 <nav> 
                     <ul>
                         <li onClick={Menu}>
-                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end"}>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end/home"}>
                                 Home <hr />
                             </NavLink>
                         </li>
                         <li onClick={Menu}>
-                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/produtos"}>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end/produtos"}>
                                 Produtos <hr />
                             </NavLink>
                         </li>
                         <li onClick={Menu}>
-                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/categorias"}>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end/categorias"}>
                                 Categorias <hr />
                             </NavLink>
                         </li>
