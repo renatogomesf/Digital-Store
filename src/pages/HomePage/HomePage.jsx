@@ -112,7 +112,7 @@ const HomePage = () => {
 
 
 
-            <Section flexDirection = {"column"} titleAlign = {"left"} title={"Produtos em alta"} link={{text:"Ver todos", href: ""}}>
+            <Section flexDirection = {"column"} titleAlign = {"left"} title={"Produtos em alta"} link={{text:"Ver todos", to: "/produtos"}}>
                 <ProductListing qtdColuna = {"4"} qtdCards = {"8"} gap = {"24px"}/>
             </Section>
 

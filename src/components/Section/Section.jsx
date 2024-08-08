@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Section = (props) => {
 
@@ -56,9 +57,9 @@ const Section = (props) => {
         <SectionComponent>
             <div className="titulo">
                 <h3>{props.title}</h3>
-                <a href={props.link.href}>
+                <Link to={props.link.to}>
                     {props.link.text } <FaArrowRightLong className="seta" />
-                </a>
+                </Link>
             </div>
 
             <div className="conteudo">

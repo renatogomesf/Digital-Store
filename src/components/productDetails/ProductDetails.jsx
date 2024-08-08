@@ -38,7 +38,7 @@ const ProductDetails = () => {
 
             </div>
             
-            <Section flexDirection = {"column"} titleAlign = {"left"} title={"Produtos Relacionados"} link={{text:"Ver todos", href: ""}}>
+            <Section flexDirection = {"column"} titleAlign = {"left"} title={"Produtos Relacionados"} link={{text:"Ver todos", to: "/produtos"}}>
                 <ProductListing qtdColuna = {"4"} qtdCards = {"4"} gap = {"24px"}/>
             </Section>
 

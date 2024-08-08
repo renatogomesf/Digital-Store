@@ -3,6 +3,7 @@ import PageLayout from "../layout/PageLayout";
 import HomePage from "../pages/HomePage/HomePage";
 import ProductListingPage from "../pages/productListingPage/ProductListingPage";
 import ProductDetails from "../components/productDetails/ProductDetails";
+import NotFound from "../pages/notFound/NotFound";
 
 const Paths = () => {
     return (
@@ -13,6 +14,7 @@ const Paths = () => {
                         <Route path="/projeto-front-end" element={<HomePage/>}/>
                         <Route path="/produtos" element={<ProductListingPage/>}/>
                         <Route path="/categorias" element={<ProductDetails/>}/>
+                        <Route path="*" element={<NotFound/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>
