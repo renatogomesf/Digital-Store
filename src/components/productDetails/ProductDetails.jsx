@@ -1,8 +1,9 @@
 import BuyBox from "../buyBox/BuyBox";
 import Gallery from "../gallery/Gallery";
-import { ProductDetailsComponent } from "./ProductDetailsStyle";
 import Section from './../Section/Section';
 import ProductListing from "../ProductListing/ProductListing";
+
+import { ProductDetailsComponent } from "./ProductDetailsStyle";
 
 const ProductDetails = () => {
 
