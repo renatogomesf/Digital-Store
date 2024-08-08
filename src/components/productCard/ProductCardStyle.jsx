@@ -29,7 +29,6 @@ export const ProductCardComponent = styled.div`
 
         & img{
             width: 100%;
-            /* max-width: 271px; */
             border-radius: 4px;
             box-shadow: 6px 16px 30px rgba(0, 0, 0, 0.05);
         }

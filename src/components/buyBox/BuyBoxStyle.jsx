@@ -153,5 +153,4 @@ export const BuyBoxComponent = styled.section`
             background-color: #CF8900;
         }
     }
-
 `
