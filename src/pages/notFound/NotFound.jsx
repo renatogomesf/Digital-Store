@@ -1,8 +1,34 @@
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 const NotFound = () => {
+
+    const NotFoundComponent = styled.section`
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        height: 100vh;
+
+        & h1{
+            font-size: 44px;
+            font-weight: 800;
+            line-height: 66px;
+            letter-spacing: 1px;
+            color: ${({theme})=>theme.dark_gray};
+
+        }
+    `
+
+
     return (
-        <>
-            <h1>não encontrado</h1>
-        </>
+        <NotFoundComponent>
+            <h1>404: PÁGINA NÃO ENCONTRADA</h1>
+            {/* <Link className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end"}>
+                Home <hr />
+            </Link> */}
+        </NotFoundComponent>
     );
 }
  

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import App from './../../App';
 
 export const HeaderComponent = styled.header`
 
@@ -22,6 +23,7 @@ export const HeaderComponent = styled.header`
 
 
         & .pesquisa{
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -59,6 +61,29 @@ export const HeaderComponent = styled.header`
                 width: 24px;
                 height: 24px;
                 cursor: pointer;
+            }
+
+            & .filtro{
+                position: absolute;
+                top: 65px;
+                left: 0px;
+                width: 100%;
+                min-height: fit-content;
+                max-height: 250px;
+                z-index: 10;
+                overflow: auto;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.534);
+                border-radius: 4px;
+                cursor: pointer;
+
+                & p{
+                    padding: 10px;
+                    background-color: white;
+
+                    &:hover{
+                        background-color: ${({theme})=>theme.light_gray_3};
+                    }
+                }
             }
         }
 

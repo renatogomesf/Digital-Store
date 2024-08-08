@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import ProductCard from "../productCard/ProductCard";
+import { Link } from "react-router-dom";
 
 
 const ProductListing = (props) => {
@@ -11,18 +12,18 @@ const ProductListing = (props) => {
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Air Jordan 1 Mid",
             image: baseURL + "product-thumb-1.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            price: "$1.614,99",
+            priceDiscount: "$1.299,99"
         },
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Air Jordan 1 Retro High",
             image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            price: "$1.200",
+            priceDiscount: "$899,90"
         },
         {   
             tagDesconto: "",
@@ -159,7 +160,9 @@ const ProductListing = (props) => {
                         i++
 
                         return (
-                            <ProductCard key={index} produto = {item}/>
+                            <Link to={"/produto-detalhe"}>
+                                <ProductCard key={index} produto = {item}/>
+                            </Link>
                         )
                     }
                 })
