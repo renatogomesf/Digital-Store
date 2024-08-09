@@ -4,22 +4,40 @@ import Section from './../Section/Section';
 import ProductListing from "../ProductListing/ProductListing";
 
 import { ProductDetailsComponent } from "./ProductDetailsStyle";
+import { useParams } from "react-router-dom";
+
 
 const ProductDetails = () => {
 
+    const {name, imageQuery, price, priceDiscount} = useParams()
+
+    const infoProduto = {
+        name,
+        imageQuery,
+        price,
+        priceDiscount
+    }
+    
+   const baseURL = "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/"
+    
+
     const slide = [
-        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-1.jpeg"},
-        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-2.jpeg"},
-        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-3.jpeg"},
-        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-4.jpeg"},
-        {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-5.jpeg"},
+        {src: baseURL + imageQuery},
+        {src: baseURL + imageQuery},
+        {src: baseURL + imageQuery},
+        {src: baseURL + imageQuery},
+        {src: baseURL + imageQuery},
+        // {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-2.jpeg"},
+        // {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-3.jpeg"},
+        // {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-4.jpeg"},
+        // {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-5.jpeg"},
     ]
 
     return (
         <ProductDetailsComponent>
             <div className="produto">
 
-                <p className="navegacao">Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</p>
+                <p className="navegacao">Home / Produtos / Tênis / Nike / {name}</p>
 
                 <div className="produtoDetalhe">
                     <div className="galeria">
@@ -33,7 +51,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
 
-                    <BuyBox/>
+                    <BuyBox infoProduto={infoProduto}/>
                 </div>
 
             </div>

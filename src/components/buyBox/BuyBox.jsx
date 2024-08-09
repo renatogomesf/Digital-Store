@@ -3,7 +3,7 @@ import { BuyBoxComponent } from "./BuyBoxStyle";
 
 import { Star } from "./BuyBoxSVG";
 
-const BuyBox = () => {
+const BuyBox = (props) => {
 
     const tamanho = [
         {numero:"39"},
@@ -42,9 +42,13 @@ const BuyBox = () => {
         }
     }
 
+    const preço = props.infoProduto.price.split(',')
+    const preçoScifrao = preço[0].split('R$')
+    
+
     return (
         <BuyBoxComponent>
-            <h1 className="titulo">Tênis Nike Revolution 6 Next Nature Masculino</h1>
+            <h1 className="titulo">{props.infoProduto.name}</h1>
             <p className="referencia">Casual | Nike | REF:38416711</p>
             <div className="avaliacao">
                 <span className="stars">
@@ -64,10 +68,10 @@ const BuyBox = () => {
             <div className="preço">
                 <span>
                     <span className="sifrao">R$</span>
-                    <span className="valorDesconto">219</span>
-                    <span className="centavos">,00</span>
+                    <span className="valorDesconto">{preçoScifrao[1]}</span>
+                    <span className="centavos">,{preço[1]}</span>
                 </span>
-                <span className="valor">219,00</span>
+                <span className="valor">{props.infoProduto.priceDiscount}</span>
             </div>
 
             <div className="descricaoProduto">

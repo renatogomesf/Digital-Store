@@ -39,6 +39,7 @@ export const ProductDetailsComponent = styled.section`
                 }
         
                 & img{
+                    width: 100%;
                     border-radius: 4px;
                 }
         

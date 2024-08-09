@@ -14,120 +14,135 @@ const ProductListing = (props) => {
             tipoProduto: "Tênis",
             name: "Air Jordan 1 Mid",
             image: baseURL + "product-thumb-1.jpeg",
-            price: "$1.614,99",
-            priceDiscount: "$1.299,99"
+            imageQuery: "product-thumb-1.jpeg",
+            price: "R$1.614,99",
+            priceDiscount: "R$1.299,99"
         },
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
             name: "Air Jordan 1 Retro High",
             image: baseURL + "product-thumb-2.jpeg",
-            price: "$1.200",
-            priceDiscount: "$899,90"
+            imageQuery: "product-thumb-2.jpeg",
+            price: "R$1.200,00",
+            priceDiscount: "R$899,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
             image: baseURL + "product-thumb-3.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            imageQuery: "product-thumb-3.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
             image: baseURL + "product-thumb-4.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            imageQuery: "product-thumb-4.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
             image: baseURL + "product-thumb-5.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            imageQuery: "product-thumb-5.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-3.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-1.jpeg",
+            imageQuery: "produc-image-1.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-4.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-2.jpeg",
+            imageQuery: "produc-image-2.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-3.jpeg",
+            imageQuery: "produc-image-3.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-4.jpeg",
+            imageQuery: "produc-image-4.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
             name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$200,00",
+            priceDiscount: "R$149,90"
         },
     ]
 
@@ -160,7 +175,7 @@ const ProductListing = (props) => {
                         i++
 
                         return (
-                            <Link to={"/produto-detalhe"}>
+                            <Link to={`/produto-detalhe/${item.name}/${item.imageQuery}/${item.price}/${item.priceDiscount}`}>
                                 <ProductCard key={index} produto = {item}/>
                             </Link>
                         )

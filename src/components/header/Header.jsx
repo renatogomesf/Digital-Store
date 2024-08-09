@@ -197,7 +197,10 @@ const Header = () => {
                         {
                             itensFiltro.map((item)=>{
                                 return (
-                                    <p>{item.name}</p>
+                                    <div className="produto">
+                                        <img src={item.image} alt="" />
+                                        <p>{item.name}</p>
+                                    </div>
                                 )
                             })
                         }

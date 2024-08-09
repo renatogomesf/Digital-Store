@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import App from './../../App';
 
 export const HeaderComponent = styled.header`
 
@@ -76,9 +75,16 @@ export const HeaderComponent = styled.header`
                 border-radius: 4px;
                 cursor: pointer;
 
-                & p{
+                & .produto{
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
                     padding: 10px;
                     background-color: white;
+
+                    & img{
+                        width: 50px;
+                    }
 
                     &:hover{
                         background-color: ${({theme})=>theme.light_gray_3};
