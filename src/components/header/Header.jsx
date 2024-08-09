@@ -4,7 +4,7 @@ import LogoHeader from '../../assets/logo-header.svg'
 import MiniCart from '../../assets/mini-cart.svg'
 
 import { CiSearch } from "react-icons/ci";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useRef, useState } from "react";
 
 
@@ -39,129 +39,149 @@ const Header = () => {
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
-            name: "Air Jordan 1 Mid",
+            name: "Nike Air Jordan 1 Mid",
             image: baseURL + "product-thumb-1.jpeg",
-            price: "$1.614,99",
-            priceDiscount: "$1.299,99"
+            imageQuery: "product-thumb-1.jpeg",
+            price: "R$1.614,99",
+            priceDiscount: "R$1.299,99"
         },
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
-            name: "Air Jordan 1 Retro High",
+            name: "Nike Air Jordan 1 Retro High",
             image: baseURL + "product-thumb-2.jpeg",
-            price: "$1.200",
-            priceDiscount: "$899,90"
+            imageQuery: "product-thumb-2.jpeg",
+            price: "R$1.200,00",
+            priceDiscount: "R$899,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Levi's Ethan S WX",
             image: baseURL + "product-thumb-3.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            imageQuery: "product-thumb-3.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$1.083,86"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Karhu synchron classic",
             image: baseURL + "product-thumb-4.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            imageQuery: "product-thumb-4.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$675,00"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike SuperRep Go",
             image: baseURL + "product-thumb-5.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            imageQuery: "product-thumb-5.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$2.158,72"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-3.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "Nike Air Jordan 1 Mid Sonics",
+            image: baseURL + "produc-image-1.jpeg",
+            imageQuery: "produc-image-1.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$1.949,99"
         },
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-4.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "Anacapri",
+            image: baseURL + "produc-image-2.jpeg",
+            imageQuery: "produc-image-2.jpeg",
+            price: "R$229,90",
+            priceDiscount: "R$119,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "Nike SB Dunk High Pro",
+            image: baseURL + "produc-image-3.jpeg",
+            imageQuery: "produc-image-3.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$474,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "All Star Chuck Taylor Pocket Hi Cano Médio",
+            image: baseURL + "produc-image-4.jpeg",
+            imageQuery: "produc-image-4.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$189,91"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "Nike Air Max 1 Ultra",
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "Nike Air Max 1 Ultra",
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "Nike Air Max 1 Ultra",
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "Nike Air Max 1 Ultra",
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
+            name: "Nike Air Max 1 Ultra",
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
-            image: baseURL + "product-thumb-2.jpeg",
-            price: "$200",
-            priceDiscount: "$149.9"
-        },
+            name: "Nike Air Max 1 Ultra",
+            image: baseURL + "produc-image-5.jpeg",
+            imageQuery: "produc-image-5.jpeg",
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
+        }
     ]
 
     const filtroRef = useRef()
     const [itensFiltro, setIntesFiltro] = useState([])
 
     const handleFilter = ()=> {
+
+        const filtro = document.querySelector(".filtro")
+        filtro.style.display = "block"
+
+
         const item = produto.filter((item)=>{
 
             let itemLower = item.name.toLowerCase()
@@ -174,6 +194,12 @@ const Header = () => {
             }
         })
         setIntesFiltro(item)
+    }
+
+    const handleFilterClose = ()=> {
+        const filtro = document.querySelector(".filtro")
+        filtro.style.display = "none"
+        filtroRef.current.value = ""
     }
 
 
@@ -195,12 +221,14 @@ const Header = () => {
 
                     <div className="filtro">
                         {
-                            itensFiltro.map((item)=>{
+                            itensFiltro.map((item,index)=>{
                                 return (
-                                    <div className="produto">
-                                        <img src={item.image} alt="" />
-                                        <p>{item.name}</p>
-                                    </div>
+                                    <Link key={index} to={`/produto-detalhe/${item.name}/${item.imageQuery}/${item.price}/${item.priceDiscount}`}>
+                                        <div className="produto" onClick={handleFilterClose}>
+                                            <img src={item.image} alt={item.name} />
+                                            <p>{item.name}</p>
+                                        </div>
+                                    </Link>
                                 )
                             })
                         }

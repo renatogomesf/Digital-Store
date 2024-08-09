@@ -20,17 +20,12 @@ const ProductDetails = () => {
     
    const baseURL = "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/"
     
-
     const slide = [
         {src: baseURL + imageQuery},
         {src: baseURL + imageQuery},
         {src: baseURL + imageQuery},
         {src: baseURL + imageQuery},
         {src: baseURL + imageQuery},
-        // {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-2.jpeg"},
-        // {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-3.jpeg"},
-        // {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-4.jpeg"},
-        // {src: "https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/produc-image-5.jpeg"},
     ]
 
     return (

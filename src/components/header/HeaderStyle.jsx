@@ -86,6 +86,11 @@ export const HeaderComponent = styled.header`
                         width: 50px;
                     }
 
+                    & p{
+                        text-decoration: none;
+                        color: black;
+                    }
+
                     &:hover{
                         background-color: ${({theme})=>theme.light_gray_3};
                     }

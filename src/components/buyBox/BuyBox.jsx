@@ -42,7 +42,7 @@ const BuyBox = (props) => {
         }
     }
 
-    const preço = props.infoProduto.price.split(',')
+    const preço = props.infoProduto.priceDiscount.split(',')
     const preçoScifrao = preço[0].split('R$')
     
 
@@ -71,7 +71,7 @@ const BuyBox = (props) => {
                     <span className="valorDesconto">{preçoScifrao[1]}</span>
                     <span className="centavos">,{preço[1]}</span>
                 </span>
-                <span className="valor">{props.infoProduto.priceDiscount}</span>
+                <span className="valor">{props.infoProduto.price}</span>
             </div>
 
             <div className="descricaoProduto">

@@ -12,7 +12,7 @@ const ProductListing = (props) => {
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
-            name: "Air Jordan 1 Mid",
+            name: "Nike Air Jordan 1 Mid",
             image: baseURL + "product-thumb-1.jpeg",
             imageQuery: "product-thumb-1.jpeg",
             price: "R$1.614,99",
@@ -21,7 +21,7 @@ const ProductListing = (props) => {
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
-            name: "Air Jordan 1 Retro High",
+            name: "Nike Air Jordan 1 Retro High",
             image: baseURL + "product-thumb-2.jpeg",
             imageQuery: "product-thumb-2.jpeg",
             price: "R$1.200,00",
@@ -30,120 +30,120 @@ const ProductListing = (props) => {
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Levi's Ethan S WX",
             image: baseURL + "product-thumb-3.jpeg",
             imageQuery: "product-thumb-3.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$1.083,86"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Karhu synchron classic",
             image: baseURL + "product-thumb-4.jpeg",
             imageQuery: "product-thumb-4.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$675,00"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike SuperRep Go",
             image: baseURL + "product-thumb-5.jpeg",
             imageQuery: "product-thumb-5.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$2.158,72"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike Air Jordan 1 Mid Sonics",
             image: baseURL + "produc-image-1.jpeg",
             imageQuery: "produc-image-1.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$1.949,99"
         },
         {   
             tagDesconto: "30% OFF",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Anacapri",
             image: baseURL + "produc-image-2.jpeg",
             imageQuery: "produc-image-2.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$229,90",
+            priceDiscount: "R$119,90"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike SB Dunk High Pro",
             image: baseURL + "produc-image-3.jpeg",
             imageQuery: "produc-image-3.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$474,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "All Star Chuck Taylor Pocket Hi Cano Médio",
             image: baseURL + "produc-image-4.jpeg",
             imageQuery: "produc-image-4.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$189,91"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike Air Max 1 Ultra",
             image: baseURL + "produc-image-5.jpeg",
             imageQuery: "produc-image-5.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike Air Max 1 Ultra",
             image: baseURL + "produc-image-5.jpeg",
             imageQuery: "produc-image-5.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike Air Max 1 Ultra",
             image: baseURL + "produc-image-5.jpeg",
             imageQuery: "produc-image-5.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike Air Max 1 Ultra",
             image: baseURL + "produc-image-5.jpeg",
             imageQuery: "produc-image-5.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike Air Max 1 Ultra",
             image: baseURL + "produc-image-5.jpeg",
             imageQuery: "produc-image-5.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
         },
         {   
             tagDesconto: "",
             tipoProduto: "Tênis",
-            name: "Nome do produto",
+            name: "Nike Air Max 1 Ultra",
             image: baseURL + "produc-image-5.jpeg",
             imageQuery: "produc-image-5.jpeg",
-            price: "R$200,00",
-            priceDiscount: "R$149,90"
-        },
+            price: "R$0,00",
+            priceDiscount: "R$749,99"
+        }
     ]
 
 
