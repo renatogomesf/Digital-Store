@@ -11,7 +11,7 @@ const Paths = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<PageLayout/>}>
-                        <Route path="/projeto-front-end" element={<HomePage/>}/>
+                        <Route path="/Digital-Store" element={<HomePage/>}/>
                         <Route path="/produtos" element={<ProductListingPage/>}/>
                         <Route path="/produto-detalhe/:name/:imageQuery/:price/:priceDiscount" element={<ProductDetails/>}/>
                         <Route path="*" element={<NotFound/>}/>

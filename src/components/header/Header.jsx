@@ -251,7 +251,7 @@ const Header = () => {
                 <nav> 
                     <ul>
                         <li onClick={Menu}>
-                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end"}>
+                            <NavLink className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/Digital-Store"}>
                                 Home <hr />
                             </NavLink>
                         </li>
