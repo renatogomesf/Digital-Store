@@ -8,7 +8,7 @@ https://renatogomesf.github.io/Digital-Store/
 
 A Digital Store foi desenvolvida durante o curso fullstack da [Geração Tech](https://geracaotech.iel-ce.org.br/). A Digital Store ainda não está totalmente responsiva, poisa parte mobile ainda está sendo desenvolvida.
 
-O projeto consiste em um e-commerc, loja online de roupas, calçados e acessórios.
+O projeto consiste em um e-commerce, loja online de roupas, calçados e acessórios.
 
 ## Layout mobile
 _Versão mobile em desenvolvimento!_
