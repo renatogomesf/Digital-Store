@@ -1,7 +1,7 @@
 import BuyBox from "../buyBox/BuyBox";
 import Gallery from "../gallery/Gallery";
 import Section from './../Section/Section';
-import ProductListing from "../ProductListing/ProductListing";
+import ProductListing from "../productListing/ProductListing";
 
 import { ProductDetailsComponent } from "./ProductDetailsStyle";
 import { useParams } from "react-router-dom";
