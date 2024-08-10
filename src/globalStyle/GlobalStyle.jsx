@@ -24,10 +24,4 @@ export const GlobalStyle =  createGlobalStyle`
         background-color: ${({theme})=>theme.primary};
         border-radius: 5px;
     }
-
-    .teste{
-        height: 681px;
-        background-color: ${({theme})=>theme.light_gray_3};
-
-    }
 `
