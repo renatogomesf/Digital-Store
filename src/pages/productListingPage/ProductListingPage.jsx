@@ -1,6 +1,6 @@
 import Section from "../../components/Section/Section";
 import FilterGroup from "../../components/filterGroup/FilterGroup";
-import ProductListing from '../../components/ProductListing/ProductListing';
+import ProductListing from '../../components/productListing/ProductListing';
 
 
 import styled from "styled-components";

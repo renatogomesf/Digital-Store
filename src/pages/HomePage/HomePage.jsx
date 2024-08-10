@@ -1,6 +1,6 @@
 import Gallery from "../../components/gallery/Gallery";
 import Section from "../../components/Section/Section";
-import ProductListing from "../../components/ProductListing/ProductListing";
+import ProductListing from "../../components/productListing/ProductListing";
 
 import collection1 from "../../img/collection-1.png"
 import collection2 from "../../img/collection-2.png"
