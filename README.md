@@ -31,6 +31,18 @@ Essas são as bibliotecas utilizadas no projeto:
 * [React-Router-Dom](https://reactrouter.com/en/main)
 * [Swiper](https://swiperjs.com/element)
 
+## Como rodar o projeto?
+
+### Projeto online!
+* O primeiro link no tópico "Sobre o projeto" é o projeto online que foi hospedado no github pages. Caso não tenha visto o link no começo, pode acessar clicando neste -> https://renatogomesf.github.io/Digital-Store/
+
+### Projeto em minha máquina.
+* Clone este repositório para sua máquina
+* Com o ele em sua máquina, abra-o no seu editor de código
+* Após aberto, aperte ``Ctrl + "`` para abrir o prompt na pasta raiz do projeto
+* Com o prompt aberto, digite ``npm instal`` para instalar as dependências do projeto
+* Após a instalação e aidna no prompt, digite ``npm run dev`` e clique no link fornecido no prompt. **Pronto! Projeto rodando :)**
+
 ## Autor
 
 Renato Gomes Ferreira
