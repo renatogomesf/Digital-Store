@@ -25,9 +25,6 @@ const NotFound = () => {
     return (
         <NotFoundComponent>
             <h1>404: PÁGINA NÃO ENCONTRADA</h1>
-            {/* <Link className={({ isActive }) => (isActive ? 'active' : 'notactive')} to={"/projeto-front-end"}>
-                Home <hr />
-            </Link> */}
         </NotFoundComponent>
     );
 }
