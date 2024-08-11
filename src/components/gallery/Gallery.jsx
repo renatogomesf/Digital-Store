@@ -6,7 +6,7 @@ const Gallery = (props) => {
 
     return (
         <GalleryComponent>
-            <Swiper slides-per-view={1} loop={true} autoplay={false} pagination={props.pagination} navigation={props.navigation}> 
+            <Swiper slides-per-view={1} loop={true} autoplay={props.autoplay} pagination={props.pagination} navigation={props.navigation}> 
                     {
                         props.slide.map((item,index)=>{
                             return (

@@ -36,7 +36,7 @@ const ProductDetails = () => {
 
                 <div className="produtoDetalhe">
                     <div className="galeria">
-                        <Gallery slide={slide} display={"none"} pagination = {false} navigation = {true}/>
+                        <Gallery slide={slide} display={"none"} autoplay={false} pagination = {false} navigation = {true}/>
                         <div className="rodape">
                             {
                                 slide.map((item)=>{

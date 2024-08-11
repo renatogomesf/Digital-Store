@@ -27,7 +27,7 @@ const HomePage = () => {
 
     return (
         <>
-            <Gallery slide = {slideHome} pagination = {true} navigation = {false}/>
+            <Gallery slide = {slideHome} autoplay={true} pagination = {true} navigation = {false}/>
 
 
 
