@@ -217,8 +217,7 @@ Error generating stack: `+s.message+`
                 top: 65px;
                 left: 0px;
                 width: 100%;
-                min-height: fit-content;
-                max-height: 250px;
+                max-height: 300px;
                 z-index: 10;
                 overflow: auto;
                 box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.534);
